@@ -1,0 +1,20 @@
+/*#region Root Elements */
+
+/* Root elements for Containers */
+/* All the dimensions were taken from Figma */
+:root {
+    --hero_cont_h : 800px;
+    --hero_cont_w : 100%;
+    --transform_cont_h: 600px;
+    --transform_cont_w : 100%;
+    --standout_cont_h: 600px;
+    --standout_cont_w : 100%;
+    --graphic_cont_h: 600px;
+    --graphic_cont_w:100%;   
+    --testimonial_cont_h: 780px;
+    --testimonial_cont_w:100%;
+    --footer_cont_h: 800px;
+    --footer_cont_w: 100%;
+}
+
+/*#endregion */
