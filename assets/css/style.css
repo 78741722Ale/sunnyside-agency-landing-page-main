@@ -7,6 +7,17 @@
     box-sizing: border-box
 }
 
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Utilities classes for see my container borders */
 .bordo {
     border: 2px solid rgb(1, 217, 233)
@@ -114,4 +125,55 @@
     width: var(--icons_cont_w);
     height: var(--icons_cont_h);
 }
+/*#endregion */
+
+/*#region Media Queries */
+
+@media screen and (max-width: 350px) {
+    
+    html {
+        display: flex;
+        justify-content: center;
+    }
+    
+    body {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Root Elements for Containers and Columns */
+    :root {
+        --hero_cont_h : 540px; /* Header Container */
+        --hero_cont_w : 100%;
+        --egg_cont_h: 310px; /* Egg Pictures */
+        --egg_cont_w: 100%;
+        --transform_box_h: 440px; /* Transform Your brand */
+        --transform_box_w : 100%;
+        --glasses_cont_h : 310px; /* Glasses Photo */
+        --glasses_cont_w : 100%;
+        --standout_box_h: 440px; /* Stand Out */ 
+        --standout_box_w : 100%;
+        --graphic_box_h: 600px; /* Graphic Design */
+        --graphic_box_w:100%; 
+        --photo_box_h: 600px; /*Photography */
+        --photo_box_w: 100%   
+        --testimonial_cont_h: 1260px; /* Testimonials Container */
+        --testimonial_cont_w:100%;
+        --footer_card_cont_h: 375px; /* Four photos (milk etc)  */
+        --footer_card_cont_w: 100%;
+        --icons_cont_h : 350px; /* Icons */
+        --icons_cont_w : 100%
+    }
+
+    /*#region Site Header */
+    .h_header {
+        width: var(--hero_cont_w);
+        height: var(--hero_cont_h);
+    }
+    /*#endregion */
+}
+
+
+
 /*#endregion */
