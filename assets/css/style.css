@@ -1,4 +1,26 @@
+/*#region Stylesheet Rules */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+/*#endregion */
+
+/*#region Common Rules */
+
+/*#endregion */
+
+
 /*#region Root Elements */
+
+/* Font Families imported from Google */
+
+/* Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+/* Fraunces */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
 
 /* Root elements for Containers */
 /* All the dimensions were taken from Figma */
@@ -15,6 +37,33 @@
     --testimonial_cont_w:100%;
     --footer_cont_h: 800px;
     --footer_cont_w: 100%;
+}
+
+/* All the primary colors */
+:root {
+    --soft_red : hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark_cyan: hsl(167, 40%, 24%);
+    --dark_blue:hsl(198, 62%, 26%);
+    --dark_moderate_cyan: hsl(168, 34%, 41%);
+}
+
+/* All the secondary colors */
+:root {
+    --Very_dark_desaturated_blue : hsl(212, 27%, 19%);
+    --Very_dark_grayish_blue: hsl(213, 9%, 39%);
+    --Dark_grayish_blue : hsl(232, 10%, 55%);
+    --Grayish_blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* Font Family & Weight */
+:root {
+    --barlow : 'Barlow', sans-serif;
+    --barlow_weight : 600;
+    --fraunces : 'Fraunces', serif;
+    --fraunces_semibold_weight : 700;
+    --fraunces_bold_weight : 900
 }
 
 /*#endregion */
