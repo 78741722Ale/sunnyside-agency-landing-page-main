@@ -26,6 +26,12 @@ body {
 /*#endregion */
 
 /*#region Common Rules */
+.flex_cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*#endregion */
 
@@ -50,6 +56,7 @@ body {
     --graphic_cont_h: 600px;
     --graphic_cont_w:100%;   
     --testimonial_cont_h: 780px;
+    --single_testimonial_h: 490px;
     --testimonial_cont_w:100%;
     --footer_card_cont_h: 450px;
     --footer_card_cont_w: 100%;
@@ -91,6 +98,7 @@ body {
     width: var(--hero_cont_w);
     height: var(--hero_cont_h);
 }
+
 /*#endregion */
 
 /*#region Site Main */
@@ -113,6 +121,11 @@ body {
     width: var(--testimonial_cont_w);
     height: var(--testimonial_cont_h);
 }
+
+.single_testimonial {
+    height: var(--single_testimonial_h);
+}
+
 /*#endregion */
 
 /*#region Site Footer */
