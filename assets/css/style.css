@@ -7,7 +7,6 @@
     box-sizing: border-box
 }
 
-
 /* Utilities classes for see my container borders */
 .bordo {
     border: 2px solid rgb(1, 217, 233)
@@ -41,8 +40,10 @@
     --graphic_cont_w:100%;   
     --testimonial_cont_h: 780px;
     --testimonial_cont_w:100%;
-    --footer_cont_h: 800px;
-    --footer_cont_w: 100%;
+    --footer_card_cont_h: 450px;
+    --footer_card_cont_w: 100%;
+    --icons_cont_h : 350px; /* 800px was the full footer container height */
+    --icons_cont_w : 100%
 }
 
 /* All the primary colors */
@@ -97,4 +98,20 @@
     height: var(--graphic_cont_h);
 }
 
+.h_testimonial {
+    width: var(--testimonial_cont_w);
+    height: var(--testimonial_cont_h);
+}
+/*#endregion */
+
+/*#region Site Footer */
+.h_cards {
+    width: var(--footer_card_cont_w);
+    height: var(--footer_card_cont_h);
+}
+
+.h_icons {
+    width: var(--icons_cont_w);
+    height: var(--icons_cont_h);
+}
 /*#endregion */
