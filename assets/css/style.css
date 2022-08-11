@@ -6,12 +6,18 @@
     padding: 0;
     box-sizing: border-box
 }
+
+
+/* Utilities classes for see my container borders */
+.bordo {
+    border: 2px solid rgb(1, 217, 233)
+}
+
 /*#endregion */
 
 /*#region Common Rules */
 
 /*#endregion */
-
 
 /*#region Root Elements */
 
@@ -64,6 +70,31 @@
     --fraunces : 'Fraunces', serif;
     --fraunces_semibold_weight : 700;
     --fraunces_bold_weight : 900
+}
+
+/*#endregion */
+
+/*#region Site Header */
+.h_header {
+    width: var(--hero_cont_w);
+    height: var(--hero_cont_h);
+}
+/*#endregion */
+
+/*#region Site Main */
+.h_brand {
+    width: var(--transform_cont_w);
+    height: var(--transform_cont_h);
+}
+
+.h_standout {
+    width: var(--standout_cont_w);
+    height: var(--standout_cont_h);
+}
+
+.h_design {
+    width: var(--graphic_cont_w);
+    height: var(--graphic_cont_h);
 }
 
 /*#endregion */
