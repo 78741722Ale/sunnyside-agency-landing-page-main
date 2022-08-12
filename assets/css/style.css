@@ -25,16 +25,6 @@ body {
 
 /*#endregion */
 
-/*#region Common Rules */
-.flex_cent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*#endregion */
-
 /*#region Root Elements */
 
 /* Font Families imported from Google */
@@ -42,7 +32,7 @@ body {
 /* Barlow */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 /* Fraunces */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
 
 /* Root elements for Containers */
 /* All the dimensions were taken from Figma */
@@ -86,18 +76,74 @@ body {
 :root {
     --barlow : 'Barlow', sans-serif;
     --barlow_weight : 600;
+    --barlow_p: 18px;
     --fraunces : 'Fraunces', serif;
+    --fraunces_h2 : 42px;
     --fraunces_semibold_weight : 700;
     --fraunces_bold_weight : 900
 }
 
 /*#endregion */
 
+/*#region Common Rules */
+.flex_cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2_text {
+    font-family: var(--fraunces);
+    font-size: var(--fraunces_h2);
+    font-weight: var(--fraunces_bold_weight);
+    
+}
+
+.p_text {
+    font-family: var(--barlow);
+    font-weight: var(--barlow_weight);
+    font-size: var(--barlow_p);
+    color: #858591;
+    width: 95%;
+}
+
+/*#endregion */
+
+
 /*#region Site Header */
 .h_header {
     width: var(--hero_cont_w);
     height: var(--hero_cont_h);
 }
+
+/*#endregion */
+
+/*#region Pictures Header  */
+#glass_pic,
+#egg_pic,
+#cherry_pic,
+#orange_pic {
+    background-position: center center;
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
+    max-height: 100%;
+    filter:saturate(160%);
+}
+
+#egg_pic {
+    background-image: url('../images/desktop/image-transform.jpg');
+}
+#glass_pic {
+    background-image: url('../images/desktop/image-stand-out.jpg');
+}
+#cherry_pic {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+}
+#orange_pic {
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+
+
 
 /*#endregion */
 
@@ -183,6 +229,18 @@ body {
     .h_header {
         width: var(--hero_cont_w);
         height: var(--hero_cont_h);
+    }
+
+    /* Take this as reference for the others */
+    #egg_pic {
+        background-image: url(../images/mobile/image-transform.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        width: var(--egg_cont_w);
+        height: var(--egg_cont_h);
+        max-width: 100%;
+        max-height: 100%;
     }
     /*#endregion */
 }

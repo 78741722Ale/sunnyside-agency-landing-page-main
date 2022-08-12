@@ -14,6 +14,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
   integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Links to My Fraunces font (not working with only @import) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> 
 </head>
 <body>
   
@@ -32,18 +36,28 @@
 
     <!-- /#brand -->
     <section id="brand">
-      <!-- /.container-fluid p-0 h_brand bordo bg-danger -->
-      <div class="container-fluid p-0 h_brand bordo bg-danger">
+      <!-- /.container-fluid p-0 h_brand bg-danger -->
+      <div class="container-fluid p-0 h_brand ">
         <!-- /.w-100 row h-100 m-0 flex-wrap p-0 -->
-        <div class="row w-100 h-100 m-0 flex-wrap p-0">
+        <div class="row flex-md-row flex-row-reverse w-100 h-100 m-0 flex-wrap p-0">
           <!-- Transform Your Brand -->
-          <div class="col-md-6 col-sm-12 bordo flex_cent">
-            Transform Your Brand
+          <div class="col-md-6 col-sm-12 flex_cent flex-column order-md-1 order-2">
+            <!-- /.col-7 bordo -->
+            <div class="col-9 bordo">
+              <!-- Main Title -->
+              <h2 class="h2_text mb-5 w-75">Transform your Brand</h2>
+              <!-- Text Title -->
+              <p class="p_text mb-5">
+                We are a full-service creative agency specializing in
+                helping brands grow fast. Engase your clients through
+                compelling visuals that do most of the marketing for you.
+              </p> 
+              <!-- Link -->
+              <a href="#">Learn More</a>
+            </div>
           </div>
           <!-- Egg picture -->  
-          <div id="egg_pic" class="col-md-6 col-sm-12 bordo flex_cent">
-            Egg picture
-          </div>
+          <div id="egg_pic" class="col-md-6 col-sm-12 flex_cent order-md-2 order-1"></div>
         </div>
       </div>
     </section>
@@ -53,33 +67,39 @@
       <!-- /.container-fluid p-0 h_standout bordo bg-danger -->
       <div class="container-fluid p-0 h_standout bordo bg-danger">
         <!-- /.w-100 row h-100 m-0 flex-wrap p-0 -->
-        <row class="row w-100 h-100 m-0 p-0 flex-wrap">
+        <div class="row w-100 h-100 m-0 p-0 flex-wrap">
           <!-- Glasses Picture -->
-          <div id="glass_pic" class="col-md-6 col-sm-12 bordo flex_cent">
-            Glasses Picture
+          <div id="glass_pic" class="col-md-6 col-sm-12 flex_cent"></div>
+          <!-- Stand Out --> 
+          <div class="col-md-6 col-sm-12 flex_cent bordo">
+            <!-- /.col-7 bordo -->
+            <div class="col-7 bordo">
+              <!-- Main Title -->
+              <h2>Stand Out to the right audience</h2>
+              <!-- Text Title -->
+              <p>
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we'll build 
+                and extend your brand in digital places.
+              </p> 
+              <!-- Link -->
+              <a href="#">Learn More</a>
+            </div>
           </div>
-          <!-- Stand Out -->  
-          <div class="col-md-6 col-sm-12 bordo flex_cent">
-            Stand Out
-          </div>
-        </row>
+        </div>
       </div>
     </section>
 
     <!-- /#design_photo -->
     <section id="design_photo">
-      <!-- /.container-fluid p-0 h_standout bordo bg-danger -->
-      <div class="container-fluid p-0 h_design bordo bg-danger">
+      <!-- /.container-fluid p-0 h_standout bg-danger -->
+      <div class="container-fluid p-0 h_design bg-danger">
         <!-- /.w-100 h-100 row m-0 p-0 -->
         <div class="w-100 row h-100 m-0 p-0">
           <!-- Cherry Picture -->
-          <div id="cherry_pic" class="col-md-6 col-sm-12 bordo flex_cent">
-            Cherry Picture
-          </div>
+          <div id="cherry_pic" class="col-md-6 col-sm-12 flex_cent"></div>
           <!-- Orange Picture -->  
-          <div id="orange_pic" class="col-md-6 col-sm-12 bordo flex_cent">
-            Orange Picture
-          </div>
+          <div id="orange_pic" class="col-md-6 col-sm-12 flex_cent"></div>
         </div>
       </div>
     </section>
