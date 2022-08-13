@@ -212,8 +212,6 @@ body {
     line-height: 1.75rem;
 }
 
-
-
 /* Standout to the right ...*/
 .h_standout {
     width: var(--standout_cont_w);
@@ -244,11 +242,27 @@ body {
 }
 
 .testimonial_text {
-    font-size: 17px;
+    font-size: 16.5px;
+    line-height: 1.75rem;
     font-family: var(--barlow);
     font-weight: var(--barlow_weight);
     color: #696D70;
     width: 98%;
+    margin-bottom: -1rem;
+}
+
+.testimonial_person {
+    font-family: var(--fraunces);
+    font-weight: var(--fraunces_semibold_weight);
+    font-size: 19px;
+    color: #262C38;
+}
+
+.testimonial_role {
+    font-family: var(--barlow);
+    font-weight: var(--barlow_weight);
+    font-size: 14px;
+    color: #BCBABB;
 }
 
 /*#endregion */

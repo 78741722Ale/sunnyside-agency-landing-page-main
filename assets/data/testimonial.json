@@ -1,0 +1,32 @@
+[
+    {
+        "col_classes" : "col-md-3 col-12 p-0 h_testimonial flex_cent",
+        "card_classes" : "card border-0 single_testimonial w-100 flex_around",
+        "profile_pic" : "./assets/images/image-emily.jpg",
+        "pic_class" : "testimonial_pic",
+        "pic_alt" : "First User",
+        "testimonial_text" : "We put our trust in sunnyside and theydelivered, making sure our needs were met and deadlines were always hit.",
+        "testimonial_person" : "Emily R",
+        "testimonial_role" : "Marketing Director"
+    },
+    {
+        "col_classes" : "col-md-3 col-12 p-0 h_testimonial flex_cent",
+        "card_classes" : "card border-0 single_testimonial w-100 flex_around",
+        "profile_pic" : "./assets/images/image-thomas.jpg",
+        "pic_class" : "testimonial_pic",
+        "pic_alt" : "Second User",
+        "testimonial_text" : "Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.",
+        "testimonial_person" : "Thomas S.",
+        "testimonial_role" : "Chief Operating Officer"
+    },
+    {
+        "col_classes" : "col-md-3 col-12 p-0 h_testimonial flex_cent",
+        "card_classes" : "card border-0 single_testimonial w-100 flex_around",
+        "profile_pic" : "./assets/images/image-jennie.jpg",
+        "pic_class" : "testimonial_pic",
+        "pic_alt" : "Third User",
+        "testimonial_text" : "Incredible end result! Our sales increased Over 400% when we worked with Sunnyside. Highly recommended!",
+        "testimonial_person" : "Jennie F.",
+        "testimonial_role" : "Business Owner"
+    }    
+]
