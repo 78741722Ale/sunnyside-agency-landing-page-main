@@ -92,49 +92,60 @@ body {
     align-items: center;
 }
 
+.flex_around {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Transform Your Brande & Stand Out */
 .h2_text {
     font-family: var(--fraunces);
     font-size: var(--fraunces_h2);
     font-weight: var(--fraunces_bold_weight);
-    
 }
-
-.p_text {
-    font-family: var(--barlow);
-    font-weight: var(--barlow_weight);
-    font-size: var(--barlow_p);
-    color: #858591;
-    line-height: 1.75rem;
-    width: 95%;
-}
-
 .learn {
     font-family: var(--fraunces);
     text-transform: uppercase;
     text-decoration: none;
 }
 
-hr {
-    margin: 0;
-    color: inherit;
-    opacity: .25;
-    width: 110px;
-    border-width: 4px;
-    height: 4px;
+.transform_stand_text,
+.design_text,
+.orange_text {
+    font-family: var(--barlow);
+    font-weight: var(--barlow_weight);
+    width: 95%;
 }
 
-/*#endregion */
+/* Graphic Design & Photography */
 
-
-/*#region Site Header */
-.h_header {
-    width: var(--hero_cont_w);
-    height: var(--hero_cont_h);
+.h4_design_title,
+.h4_orange_title {
+    font-family: var(--fraunces);
+    font-weight: var(--fraunces_semibold_weight);
+    font-size: 29px;
 }
 
-/*#endregion */
+.design_text,
+.orange_text {
+    font-size: 16px;
+    font-family: var(--barlow);
+    font-weight: var(--barlow_weight);    
+}
 
-/*#region Pictures Main  */
+.design_text,
+.h4_design_title {
+    color: #246456;
+}
+
+.orange_text,
+.h4_orange_title {
+    color: #195268;
+}
+
+
 #glass_pic,
 #egg_pic,
 #cherry_pic,
@@ -144,56 +155,6 @@ hr {
     max-width: 100%;
     max-height: 100%;
     filter:saturate(140%);
-}
-
-#egg_pic {
-    background-image: url('../images/desktop/image-transform.jpg');
-}
-#glass_pic {
-    background-image: url('../images/desktop/image-stand-out.jpg');
-}
-#cherry_pic {
-    background-image: url('../images/desktop/image-graphic-design.jpg');
-}
-#orange_pic {
-    background-image: url('../images/desktop/image-photography.jpg');
-}
-
-
-
-/*#endregion */
-
-/*#region Site Main */
-.h_brand {
-    width: var(--transform_cont_w);
-    height: var(--transform_cont_h);
-}
-
-.h_standout {
-    width: var(--standout_cont_w);
-    height: var(--standout_cont_h);
-}
-
-.h_design {
-    width: var(--graphic_cont_w);
-    height: var(--graphic_cont_h);
-}
-
-.h_testimonial {
-    width: var(--testimonial_cont_w);
-    height: var(--testimonial_cont_h);
-}
-
-.single_testimonial {
-    height: var(--single_testimonial_h);
-}
-
-/*#endregion */
-
-/*#region Site Footer */
-.h_cards {
-    width: var(--footer_card_cont_w);
-    height: var(--footer_card_cont_h);
 }
 
 #firstFooterCard,
@@ -207,6 +168,95 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: contain;
+}
+
+
+
+/*#endregion */
+
+
+/*#region Site Header */
+.h_header {
+    width: var(--hero_cont_w);
+    height: var(--hero_cont_h);
+}
+
+/*#endregion */
+
+
+/*#region Site Main */
+
+/* Background Pictures */
+#egg_pic {
+    background-image: url('../images/desktop/image-transform.jpg');
+}
+#glass_pic {
+    background-image: url('../images/desktop/image-stand-out.jpg');
+}
+#cherry_pic {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+}
+#orange_pic {
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+
+/* Transform Your Brand */
+.h_brand {
+    width: var(--transform_cont_w);
+    height: var(--transform_cont_h);
+}
+
+.transform_stand_text {
+    font-size: var(--barlow_p);
+    color: #858591;
+    line-height: 1.75rem;
+}
+
+
+
+/* Standout to the right ...*/
+.h_standout {
+    width: var(--standout_cont_w);
+    height: var(--standout_cont_h);
+}
+
+/* Graphic Design and Photography */
+.h_design {
+    width: var(--graphic_cont_w);
+    height: var(--graphic_cont_h);
+}
+
+/* Testimonials */
+.h_testimonial {
+    width: var(--testimonial_cont_w);
+    height: var(--testimonial_cont_h);
+}
+
+.single_testimonial {
+    height: var(--single_testimonial_h);
+}
+
+.testimonial_pic {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.testimonial_text {
+    font-size: 17px;
+    font-family: var(--barlow);
+    font-weight: var(--barlow_weight);
+    color: #696D70;
+    width: 98%;
+}
+
+/*#endregion */
+
+/*#region Site Footer */
+.h_cards {
+    width: var(--footer_card_cont_w);
+    height: var(--footer_card_cont_h);
 }
 
 #firstFooterCard {
