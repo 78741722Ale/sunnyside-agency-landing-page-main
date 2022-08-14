@@ -38,7 +38,6 @@ async function elementTry() {
     // Now i can execute my DOM manipulation
     data.forEach(element => {
         // Try to Verify my elements
-        // console.log(element.col_classes);
         let singleTask = `<li>${element.box_title}</li>`
         myTry.insertAdjacentHTML('beforeend', singleTask)
     });

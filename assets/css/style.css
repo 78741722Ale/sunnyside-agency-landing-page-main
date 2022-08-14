@@ -154,7 +154,7 @@ body {
     aspect-ratio: 1 / 1;
     max-width: 100%;
     max-height: 100%;
-    filter:saturate(140%);
+    filter:saturate(120%);
 }
 
 #firstFooterCard,
@@ -174,7 +174,6 @@ body {
 
 /*#endregion */
 
-
 /*#region Site Header */
 .h_header {
     width: var(--hero_cont_w);
@@ -182,7 +181,6 @@ body {
 }
 
 /*#endregion */
-
 
 /*#region Site Main */
 
@@ -289,12 +287,40 @@ body {
     background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
 }
 
-
-
 .h_icons {
     width: var(--icons_cont_w);
     height: var(--icons_cont_h);
+    background-color: #90D4C5;
 }
+
+
+.footer_logo {
+    width: 170px;
+    height: 35px;
+}
+
+.footer_links {
+    font-family: var(--barlow);
+    font-weight: var(--barlow_weight);
+    font-size: 17px;
+    text-decoration: none;
+    color: #246456;
+}
+
+.footer_icons {
+    width: 20px;
+    height: 20px;
+    color: #246456;
+}
+
+.footer_links:active,
+.footer_links:hover,
+.footer_icons:active,
+.footer_icons:hover {
+    color: white;
+}
+
+
 /*#endregion */
 
 /*#region Media Queries */
