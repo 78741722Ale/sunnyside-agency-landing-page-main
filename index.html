@@ -5,8 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunnyside Agency Landing Page</title>
-  <!-- Link to my main stylesheet -->
-  <link rel='stylesheet' href='./assets/css/style.css'>
   <!-- Bootstrap CDN Links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -14,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
   integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to my main stylesheet -->
+    <link rel='stylesheet' href='./assets/css/style.css'>
   <!-- Links to My Fraunces font (not working with only @import) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,16 +38,48 @@
             </a>
           </div>
           <!-- /.col-4 d-flex justify-content-evenly align-items-center -->
-          <div class="col-4 d-flex justify-content-evenly align-items-center">
+          <div class="col-4 d-flex justify-content-evenly align-items-center"> 
+            <nav class="navbar navbar-expand-sm">
+              <!-- /.navbar-toggle -->
+              <button class="navbar-toggler bg-success" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- /.navbar-toggler-icon -->
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- /.collapse navbar-collapse -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- /.navbar-nav -->
+                <ul class="navbar-nav">
+                  <!-- /.flex_cent px-3 -->
+                  <li class="flex_cent nav-item px-3">
+                    <a class="navbar_links" href="#">About</a>
+                  </li>
+                  <!-- /.flex_cent px-3 -->
+                  <li class="flex_cent nav-item px-3">
+                    <a class="navbar_links" href="#">Services</a>
+                  </li>
+                  <!-- /.flex_cent px-3 -->
+                  <li class="flex_cent nav-item px-3">
+                    <a class="navbar_links" href="#">Projects</a>
+                  </li>
+                  <!-- /.flex_cent px-3 -->
+                  <li class="flex_cent nav-item px-3">
+                    <button class="contact_btn p-2 px-3">CONTACT</button>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            
+            
+            
             <!-- Dynamic Links (afterbegin) -->
             <!-- /.navbar_links -->
-            <a class="navbar_links" href="#">About</a>
+            <!-- <a class="navbar_links" href="#">About</a> -->
             <!-- /.navbar_links -->
-            <a class="navbar_links" href="#">Services</a>
+            <!-- <a class="navbar_links" href="#">Services</a> -->
             <!-- /.navbar_links -->
-            <a class="navbar_links" href="#">Projects</a>
+            <!-- <a class="navbar_links" href="#">Projects</a> -->
             <!-- /.btn -->
-            <button class="contact_btn p-2 px-3">CONTACT</button>
+            <!-- <button class="contact_btn p-2 px-3">CONTACT</button> -->
           </div>
         </div>
         <!-- /.text-center col-12 mt-xl-5 mb-xl-5 -->
@@ -241,8 +273,7 @@
   </main>
 
   <!-- /#site_footer -->
-  <footer id="site_footer">
-
+  <footer class="mt-3" id="site_footer">
     <!-- /#cards -->
     <section id="cards">
       <!-- /.container-fluid p-0 h_cards -->
@@ -251,13 +282,13 @@
         <div class="row d-flex justify-content-center align-items-center w-100 h-100 m-0 p-0 flex-wrap flex-sm-wrap">
           <!-- This cards needs to be generate dynamically -->
           <!-- /.col-md-3 col-sm-6 h-100 -->
-          <div id="firstFooterCard" class="col-md-3 h-100 flex_cent"></div>
+          <div id="firstFooterCard" class="col-md-3 col-sm-6 h-100 flex_cent"></div>
           <!-- /.col-md-3 col-sm-6 h-100 -->
-          <div id="secondFooterCard" class="col-md-3 h-100 flex_cent"></div>
+          <div id="secondFooterCard" class="col-md-3 col-sm-6 h-100 flex_cent"></div>
           <!-- /.col-md-3 col-sm-6 h-100 -->
-          <div id="thirdFooterCard" class="col-md-3 h-100 flex_cent"></div>
+          <div id="thirdFooterCard" class="col-md-3 col-sm-6 h-100 flex_cent"></div>
           <!-- /.col-md-3 col-sm-6 h-100 -->
-          <div id="fourthFooterCard" class="col-md-3 h-100 flex_cent"></div>
+          <div id="fourthFooterCard" class="col-md-3 col-sm-6 h-100 flex_cent"></div>
         </div>
       </div>
     </section>
@@ -268,15 +299,15 @@
       <div class="container-fluid p-0 h_icons">
         <!-- /.row w-100 h-100 m-0 -->
         <div class="row w-100 h-100 m-0 d-flex align-items-center flex-column">
-          <!-- /.col-4 flex_cent mt-3 mb-4 -->
-          <div class="col-4 flex_cent mt-3 mb-5">
+          <!-- /.col-lg-4 col-sm-8 flex_cent mt-3 mb-4 -->
+          <div class="col-lg-4 col-sm-8 flex_cent mt-3 mb-5">
             <a href="#">
               <!-- /.mt-5 footer_logo -->
               <img class="mt-5 footer_logo" src="./assets/images/footer_logo.svg" alt="Site Logo">
             </a>
           </div>
-          <!-- /.col-3 p-1 d-flex justify-content-evenly align-items-center mb-5 -->
-          <div class="col-4 p-1 d-flex justify-content-around align-items-center mb-5">
+          <!-- /.col-4 p-1 d-flex justify-content-around align-items-center mb-5 -->
+          <div class="col-lg-4 col-sm-10 p-1 d-flex justify-content-around align-items-center mb-5">
             <!-- /.footer_links -->
             <a class="footer_links" href="#">About</a>
             <!-- /.footer_links -->
@@ -285,7 +316,7 @@
             <a class="footer_links" href="#">Projects</a>
           </div>
           <!-- /.col-2 d-flex justify-content-evenly align-items-center mt-4 -->
-          <div class="col-2 d-flex justify-content-evenly align-items-center mt-5">
+          <div class="col-sm-3 col-lg-2 d-flex justify-content-evenly align-items-center mt-5">
             <!-- This icons need to be Dynamic -->
             <!-- Facebook -->
             <a class="flex_cent" href="#">
@@ -307,13 +338,12 @@
         </div>
       </div>
     </section>
-
   </footer>
   
-
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   <!-- Link to my Bootstrap CDN JS file -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <!-- Link to my Font Awesome CDN JS File -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" 
   integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="

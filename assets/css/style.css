@@ -435,8 +435,6 @@ body {
         height: var(--single_testimonial_sm);
     }
 
-
-
     /* Font Family & Weight */
     :root {
         --barlow : 'Barlow', sans-serif;
@@ -452,12 +450,20 @@ body {
 
     /*#region Common Utilities */
 
+
+
+
     .h_brand,
     .h_standout,
     .h_design,
     .h_testimonial {
         height: fit-content;
     }  
+
+    .navbar_logo {
+        width: 125px;
+        height: 25px;
+    }
 
     #egg_pic,
     #glass_pic,
@@ -505,9 +511,40 @@ body {
         width: 100%;
         font-size: 15px;
     }
+
+    #firstFooterCard,
+    #secondFooterCard,
+    #thirdFooterCard,
+    #fourthFooterCard {
+    background-position: center center;
+    max-width: 50%;
+    max-height: 50%;
+    filter:saturate(130%);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    }
+
+
     /*#endregion */
 
     /*#region Site Header */
+
+    #header_pic {
+        background-position: center center;
+        max-width: 100%;
+        max-height: 100%;
+        filter:saturate(130%);   
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain;
+    }
+
+    #header_pic {
+        background-image: url('../images/mobile/image-header.jpg');
+        filter:saturate(110%);
+    }
+
 
     /* Col 11 */
     .h_header {
@@ -524,11 +561,6 @@ body {
         margin-top: 20px;
         height: fit-content;
     }
-    .navbar_logo {
-        width: 125px;
-        height: 25px;
-    }
-
     /* Col 12 */
     .mobile_header_row .col-12 {
         margin-top: -100px;
@@ -553,7 +585,7 @@ body {
     }
     /*#endregion  */
 
-    /*#region Site Main  */
+    /*#region Site Main */
 
     /*#region Transform Your Brand */
     #egg_pic {
@@ -617,9 +649,29 @@ body {
 
     /*#endregion  */
 
+    /*#endregion */
 
+    /*#region Footer  */
+    #firstFooterCard {
+        background-image: url('../images/mobile/image-gallery-milkbottles.jpg');
+    }
+    #secondFooterCard {
+        background-image: url('../images/mobile/image-gallery-orange.jpg');
+    }
+    #thirdFooterCard {
+        background-image: url('../images/mobile/image-gallery-cone.jpg');
+    }
+    #fourthFooterCard {
+        background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+    }
+
+    #icons .container-fluid .row .col-sm-3 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+    }
+    /*#endregion */
 }
-
-
 
 /*#endregion */
