@@ -104,6 +104,7 @@ body {
     font-family: var(--fraunces);
     font-size: var(--fraunces_h2);
     font-weight: var(--fraunces_bold_weight);
+    width: 75% !important;
 }
 .learn {
     font-family: var(--fraunces);
@@ -382,6 +383,7 @@ body {
 
 @media screen and (max-width: 350px) {
     
+    /*#region stylesheet rules  */
     *,
     *::before,
     *::after{
@@ -401,7 +403,11 @@ body {
         width: 100%;
         margin: 0 auto;
     }
+
+    /*#endregion  */
     
+    /*#region Root Elements  */
+
     /* Root Elements for Containers and Columns */
     :root {
         --hero_cont_h : 540px; /* Header Container */
@@ -417,14 +423,89 @@ body {
         --graphic_box_h: 600px; /* Graphic Design */
         --graphic_box_w:100%; 
         --photo_box_h: 600px; /*Photography */
-        --photo_box_w: 100%   
-        --testimonial_cont_h: 1260px; /* Testimonials Container */
-        --testimonial_cont_w:100%;
+        --photo_box_w: 100%;   
+        --single_testimonial_sm : 350px; /* Single Testimonial  */
         --footer_card_cont_h: 375px; /* Four photos (milk etc)  */
         --footer_card_cont_w: 100%;
         --icons_cont_h : 350px; /* Icons */
         --icons_cont_w : 100%
     }
+
+    .single_testimonial {
+        height: var(--single_testimonial_sm);
+    }
+
+
+
+    /* Font Family & Weight */
+    :root {
+        --barlow : 'Barlow', sans-serif;
+        --barlow_weight : 600;
+        --barlow_p: 18px;
+        --fraunces : 'Fraunces', serif;
+        --fraunces_h2_mq : 33px;
+        --fraunces_semibold_weight : 700;
+        --fraunces_bold_weight : 900
+    }
+
+    /*#endregion */
+
+    /*#region Common Utilities */
+
+    .h_brand,
+    .h_standout,
+    .h_design,
+    .h_testimonial {
+        height: fit-content;
+    }  
+
+    #egg_pic,
+    #glass_pic,
+    #cherry_pic,
+    #orange_pic {
+        max-width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain;        
+        max-height: 100%;
+    }
+
+    #transform .col-sm-12 .h2_text,
+    #standout .col-sm-12 .h2_text {
+        font-size: var(--fraunces_h2_mq) !important;
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #transform .col-sm-12 .transform_stand_text,
+    #standout .col-sm-12 .transform_stand_text {
+        text-align: center;
+        font-size: 16.5px;
+        font-weight: var(--barlow_weight);
+        width: 100%;
+    }
+
+    #transform .col-sm-12 .learn,
+    #standout .col-sm-12 .learn {
+        display: flex;
+        justify-content: center;
+        font-family: var(--fraunces);
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    #cherry_pic .col-sm-12 .h4_design_title,
+    #orange_pic .col-sm-12 .h4_orange_title {
+        margin-bottom: 10px;
+    } 
+
+    #cherry_pic .col-sm-12 .design_text,
+    #orange_pic .col-sm-12 .orange_text {
+        width: 100%;
+        font-size: 15px;
+    }
+    /*#endregion */
 
     /*#region Site Header */
 
@@ -474,27 +555,7 @@ body {
 
     /*#region Site Main  */
 
-    .h_brand {
-        height: fit-content;
-    }
-
-    .h_standout {
-        height: fit-content;
-    }
-
-    #egg_pic,
-    #glass_pic,
-    #cherry_pic,
-    #orange_pic {
-        max-width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        object-fit: contain;        
-        max-height: 100%;
-    }
-
     /*#region Transform Your Brand */
-    
     #egg_pic {
         background-image: url(../images/mobile/image-transform.jpg);
         width: var(--egg_cont_w);
@@ -504,33 +565,22 @@ body {
         height: var(--transform_box_h); 
         width: var(--transform_box_w);
     }
-
     /*#endregion */
 
-
-
-
-
-
-
-
-    /* StandOut & Glass Pic */
-
-
-    #standout {
-        height: var(--standout_box_h);
-        width: var(--standout_box_w);
-    }
+    /*#region StandOut & Glass Pic */
     #glass_pic {
         background-image: url(../images/mobile/image-stand-out.jpg);
         width: var(--glasses_cont_w);
         height: var(--glasses_cont_h);
     }
-
-    /* Design & Photography */
-    .h_design {
-        height: fit-content;
+    #standout {
+        height: var(--standout_box_h);
+        width: var(--standout_box_w);
     }
+
+    /*#endregion  */
+
+    /*#region Design & Photography  */
 
     #cherry_pic {
         background-image: url(../images/mobile/image-graphic-design.jpg);
@@ -543,7 +593,29 @@ body {
         height: var(--photo_box_h);
         width: var(--photo_box_w);
     }
+
     /*#endregion */
+
+    /*#region Testimonials  */
+    .col-sm-12 .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .testimonial_text {
+        font-size: 16px;
+        line-height: 1.75rem;
+        font-family: var(--barlow);
+        font-weight: var(--barlow_weight);
+        color: #696D70;
+        width: 93% !important;
+        margin-bottom: 0.75rem;
+    }
+
+
+    /*#endregion  */
 
 
 }
