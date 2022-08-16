@@ -382,6 +382,15 @@ body {
 
 @media screen and (max-width: 350px) {
     
+    *,
+    *::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
     html {
         display: flex;
         justify-content: center;
@@ -418,23 +427,125 @@ body {
     }
 
     /*#region Site Header */
+
+    /* Col 11 */
     .h_header {
         width: var(--hero_cont_w);
         height: var(--hero_cont_h);
     }
+    .mobile_header_row {
+        height: 100%;
+    }
+    .mobile_header_row .col-11 {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 20px;
+        height: fit-content;
+    }
+    .navbar_logo {
+        width: 125px;
+        height: 25px;
+    }
 
-    /* Take this as reference for the others */
-    #egg_pic {
-        background-image: url(../images/mobile/image-transform.jpg);
+    /* Col 12 */
+    .mobile_header_row .col-12 {
+        margin-top: -100px;
+    }
+    .mobile_header_row .col-12 > h1 {
+        margin-bottom: 40px;
+    }
+    .header_arrow {
+        width: 35px;
+        height: 115px;
+        object-fit: contain;
+    }
+    .hero_title {
+        word-spacing: 20%;
+        letter-spacing: 5px;
+        font-size: 42px;
+        font-family: var(--fraunces);
+        font-weight: var(--fraunces_bold_weight);
+        color: white;
+        text-transform: uppercase;
+        height: fit-content;
+    }
+    /*#endregion  */
+
+    /*#region Site Main  */
+
+    .h_brand {
+        height: fit-content;
+    }
+
+    .h_standout {
+        height: fit-content;
+    }
+
+    #egg_pic,
+    #glass_pic,
+    #cherry_pic,
+    #orange_pic {
+        max-width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        object-fit: contain;
-        width: var(--egg_cont_w);
-        height: var(--egg_cont_h);
-        max-width: 100%;
+        object-fit: contain;        
         max-height: 100%;
     }
+
+    /*#region Transform Your Brand */
+    
+    #egg_pic {
+        background-image: url(../images/mobile/image-transform.jpg);
+        width: var(--egg_cont_w);
+        height: var(--egg_cont_h);
+    }
+    #transform {
+        height: var(--transform_box_h); 
+        width: var(--transform_box_w);
+    }
+
     /*#endregion */
+
+
+
+
+
+
+
+
+    /* StandOut & Glass Pic */
+
+
+    #standout {
+        height: var(--standout_box_h);
+        width: var(--standout_box_w);
+    }
+    #glass_pic {
+        background-image: url(../images/mobile/image-stand-out.jpg);
+        width: var(--glasses_cont_w);
+        height: var(--glasses_cont_h);
+    }
+
+    /* Design & Photography */
+    .h_design {
+        height: fit-content;
+    }
+
+    #cherry_pic {
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+        height: var(--graphic_box_h);
+        width: var(--graphic_box_w);
+    }
+
+    #orange_pic {
+        background-image: url(../images/mobile/image-photography.jpg);
+        height: var(--photo_box_h);
+        width: var(--photo_box_w);
+    }
+    /*#endregion */
+
+
 }
 
 
