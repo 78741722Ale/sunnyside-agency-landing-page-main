@@ -462,9 +462,6 @@ body {
 
     /*#region Common Utilities */
 
-
-
-
     .h_brand,
     .h_standout,
     .h_design,
@@ -537,7 +534,6 @@ body {
     object-fit: contain;
     }
 
-
     /*#endregion */
 
     /*#region Site Header */
@@ -557,6 +553,59 @@ body {
         filter:saturate(110%);
     }
 
+    /*#region Navbar */
+    #navbarNav {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 305px;
+        margin-top: 105px;
+        background-color: #FFFBF8;
+        padding: 1rem;
+        transition: height 0.5s ease-in;
+    }
+
+    .navbar-nav {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0px !important;
+    }
+    .navbar-toggler {
+        background: none;
+        border: none;
+    }
+    .navbar {
+        padding-top: 1.5rem;
+    }
+    .navbar-brand {
+        margin-left: 1rem !important;
+    }
+    .nav-link {
+        color: #827F93 !important;
+    }
+    .fa-bars {
+        transform: scale(1.2);
+    }
+    .fa-bars:active {
+        transition: 0.5s ease;
+    }
+    .contact_btn {
+        color: black;
+        background-color: #FBD700;
+    }
+    .navbar_collapse {
+        position: absolute;
+        top: 0;
+    }
+    /*#endregion  */
+
+
+    #hero_text {
+        margin-top: 50px;
+    }
 
     /* Col 11 */
     .h_header {
@@ -584,6 +633,7 @@ body {
         width: 35px;
         height: 115px;
         object-fit: contain;
+        margin-top: 30px;
     }
     .hero_title {
         word-spacing: 20%;
@@ -641,6 +691,25 @@ body {
     /*#endregion */
 
     /*#region Testimonials  */
+
+    #row_test {
+        height: 1300px !important;
+    }
+
+    .h_testimonial {
+        height: 1200px;
+    }
+
+    .testimonial_main_title {
+        font-weight: var(--fraunces_bold_weight);
+        letter-spacing: 5px;
+        font-size: 15px;
+        font-family: var(--fraunces);
+        text-transform: uppercase;
+        color: #BCBABB;
+        margin-top: 2.5rem;
+    }
+
     .col-sm-12 .card {
         display: flex;
         flex-direction: column;

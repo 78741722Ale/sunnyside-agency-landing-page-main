@@ -1,7 +1,7 @@
 [
     {
-        "col_classes" : "col-md-3 col-12 p-0 h_testimonial flex_cent",
-        "card_classes" : "card border-0 single_testimonial w-100 flex_around",
+        "col_classes" : "col-lg-3 col-sm-11 p-0 single_testimonial flex_cent",
+        "card_classes" : "card border-0 single_testimonial w-100 d-flex flex_around",
         "profile_pic" : "./assets/images/image-emily.jpg",
         "pic_class" : "testimonial_pic",
         "pic_alt" : "First User",
@@ -10,8 +10,8 @@
         "testimonial_role" : "Marketing Director"
     },
     {
-        "col_classes" : "col-md-3 col-12 p-0 h_testimonial flex_cent",
-        "card_classes" : "card border-0 single_testimonial w-100 flex_around",
+        "col_classes" : "col-lg-3 col-sm-11 p-0 single_testimonial flex_cent",
+        "card_classes" : "card border-0 single_testimonial w-100 d-flex flex_around",
         "profile_pic" : "./assets/images/image-thomas.jpg",
         "pic_class" : "testimonial_pic",
         "pic_alt" : "Second User",
@@ -20,8 +20,8 @@
         "testimonial_role" : "Chief Operating Officer"
     },
     {
-        "col_classes" : "col-md-3 col-12 p-0 h_testimonial flex_cent",
-        "card_classes" : "card border-0 single_testimonial w-100 flex_around",
+        "col_classes" : "col-lg-3 col-sm-11 p-0 single_testimonial flex_cent",
+        "card_classes" : "card border-0 single_testimonial w-100 d-flex flex_around",
         "profile_pic" : "./assets/images/image-jennie.jpg",
         "pic_class" : "testimonial_pic",
         "pic_alt" : "Third User",

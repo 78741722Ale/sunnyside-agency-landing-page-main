@@ -105,6 +105,36 @@ async function graphicPhotography() {
 graphicPhotography()
 //#endregion
 
+//#region Testimonials Cards DOM manipulation
+async function testimonialsCards() {
+    // I take the dom element I want to iterate over
+    const cardsWrapper = document.getElementById("testimonialsCards")
+    // Invoke my function
+    let data = await getData('./assets/data/testimonial.json')
+
+    data.forEach(element => {
+        let singleTestimonial =
+            `
+            <div class="${element.col_classes}">
+                <div class="${element.card_classes}">
+                    <img class="${element.pic_class}" src="${element.profile_pic}" alt="${element.pic_alt}">
+                    <p class="text-center testimonial_text">${element.testimonial_text}</p>
+                    <div class="text-center">
+                        <h5 class="testimonial_person">${element.testimonial_person}</h5>
+                        <h6 class="testimonial_role">${element.testimonial_role}</h6>                    
+                    </div>
+                </div>
+            </div>
+            `
+        cardsWrapper.insertAdjacentHTML('beforeend', singleTestimonial)
+    })
+}
+// Invoke my function for DOM manipulation
+testimonialsCards()
+
+//#endegion
+
+
 //#region Footer Cards DOM manipulation
 async function cardsOfFooter() {
     // I take the dom element I want to iterate over

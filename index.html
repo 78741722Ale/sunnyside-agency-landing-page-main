@@ -30,13 +30,13 @@
         <!-- /.navbar navbar-expand-sm navbar-light -->
         <nav class="navbar navbar-expand-sm d-flex justify-content-between navbar-light">
           <!-- /.navbar-brand mb-0 -->
-          <a href="#" class="navbar-brand bordo mb-0 align-self-start">
+          <a href="#" class="navbar-brand mb-0 ms-4 align-self-start">
             <!-- /.navbar_logo d-inline-block align-top -->
             <img class="navbar_logo d-inline-block align-top" src="./assets/images/logo.svg" alt="">
           </a>
           <!-- /.navbar-toggler -->
           <button 
-          class="navbar-toggler" 
+          class="navbar-toggler me-3" 
           type="button" 
           data-bs-toggle="collapse" 
           data-bs-target="#navbarNav"
@@ -44,29 +44,29 @@
           aria-expanded="false"
           aria-label="Toggle navigation">
             <!-- /.fa-solid fa-bars -->
-            <span><i class="fa-solid fa-bars"></i></span>
+            <span><i class="fa-solid fa-bars text-light"></i></span>
           </button>
           <!-- /#navbarNav.collapse navbar-collapse -->
-          <div class="collapse bordo navbar-collapse justify-content-end" id="navbarNav">
+          <div class="collapse navbar_collapse navbar-collapse justify-content-end" id="navbarNav">
             <!-- /.navbar-nav -->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-3">
               <!-- /.nav-item active -->
-              <li class="nav-item active">
+              <li class="nav-item mx-3 active">
                 <!-- /.nav-link -->
                 <a class="nav-link" href="#">About</a>
               </li>
               <!-- /.nav-item -->
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <!-- /.nav-link -->
                 <a class="nav-link" href="#">Services</a>
               </li>
               <!-- /.nav-item -->
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <!-- /.nav-link -->
                 <a class="nav-link" href="#">Projects</a>
               </li> 
               <!-- /.nav-item -->
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <!-- /.contact_btn p-2 px-3 -->
                 <button class="contact_btn p-2 px-3">CONTACT</button>
               </li>                                          
@@ -74,9 +74,9 @@
           </div>
         </nav>
         <!-- /.text-center col-12 col-sm-12 mt-xl-5 mb-xl-5  -->
-        <div class="text-center col-12 col-sm-12 mt-xl-5 mb-xl-5">
-          <!-- /.text-center col-12 mt-xl-5 mb-xl-5 -->
-          <h1 class="text-center hero_title mb-xl-5">We are creatives</h1>
+        <div id="hero_text" class="text-center col-12 col-sm-12 mt-xl-5 mb-xl-5">
+          <!-- /.text-center pt-xl-5 hero_title mb-xl-5 -->
+          <h1 class="text-center pt-xl-5 hero_title mb-xl-5">We are creatives</h1>
           <!-- /.header_arrow mt-xl-5 -->
           <img class="header_arrow mt-xl-5" src="./assets/images/icon-arrow-down.svg" alt="arrow Down">
         </div>
@@ -85,39 +85,36 @@
 
   <!-- /#site_main --> 
   <main id="site_main">
-
     <!-- /#brand -->
     <section id="brand">
-      <!-- /.container-fluid p-0 h_brand bg-danger -->
+      <!-- /.container-fluid p-0 h_brand -->
       <div class="container-fluid p-0 h_brand ">
-        <!-- /.w-100 row h-100 m-0 flex-wrap p-0 -->
+        <!-- /.row flex-md-row flex-row-reverse w-100 h-100 m-0 flex-wrap p-0 -->
         <div class="row flex-md-row flex-row-reverse w-100 h-100 m-0 flex-wrap p-0">
           <!-- /.col-md-6 p-0 col-sm-12 flex_cent flex-column order-md-1 order-2 -->
           <div id="transform" class="col-md-6 p-0 col-sm-12 flex_cent flex-column order-md-1 order-2">
             <!-- This col is now Dynamic -->
           </div>
-          <!-- /.col-md-6 col-sm-12 flex_cent order-md-2 order-1 -->  
+          <!-- /.col-md-6 col-sm-12 flex_cent order-md-2 order-1 #egg_pic -->  
           <div id="egg_pic" class="col-md-6 col-sm-12 flex_cent order-md-2 order-1"></div>
         </div>
       </div>
     </section>
-
     <!-- /#stand_out -->
     <section id="stand_out">
       <!-- /.container-fluid p-0 h_standout -->
       <div class="container-fluid p-0 h_standout">
         <!-- /.row w-100 h-100 m-0 p-0 flex-wrap -->
         <div class="row w-100 h-100 m-0 p-0 flex-wrap">
-          <!-- /.col-md-6 col-sm-12 flex_cent -->
+          <!-- /.col-md-6 col-sm-12 flex_cent #glass_pic -->
           <div id="glass_pic" class="col-md-6 col-sm-12 flex_cent"></div>
-          <!-- /.col-lg-6 col-sm-12 flex_cent --> 
+          <!-- /.col-lg-6 col-sm-12 flex_cent #standout --> 
           <div id="standout" class="col-lg-6 col-sm-12 flex_cent">
             <!-- This col is now Dynamic -->
           </div>
         </div>
       </div>
     </section>
-
     <!-- /#design_photo -->
     <section id="design_photo">
       <!-- /.container-fluid p-0 h_standout bg-danger -->
@@ -125,97 +122,30 @@
         <!-- /.w-100 h-100 row m-0 p-0 -->
         <div id="cherry_orange" class="w-100 row h-100 m-0 p-0">
           <!-- This cols is now Dynamic -->
-
         </div>
       </div>
     </section>
-    
     <!-- /#testimonials -->
     <section id="testimonials">
       <!-- /.container-fluid p-0 -->
       <div class="container-fluid p-0 ">
         <!-- /.w-100 row h-100 m-0 -->
-        <div class="w-100 row position-relative h-100 m-0 d-flex justify-content-center align-items-center flex-wrap">
+        <div id="row_test" class="w-100 row position-relative h-100 m-0 d-flex justify-content-center align-items-center flex-wrap">
           <!-- /.col-12 position-absolute -->
-          <div class="col-12 mt-5 position-absolute flex_cent top-0">
+          <div class="col-12 mt-lg-4 position-absolute flex_cent top-0">
             <!-- /.testimonial_main_title -->
             <h4 class="testimonial_main_title">Client Testimonials</h4>
           </div>
           <!-- /.col-12 p-0 m-0 -->
           <div class="col-md-12 p-0 m-0">
             <!-- /.row w-100 gap-4 m-0 p-0 d-flex h_testimonial justify-content-center align-items-center flex-wrap flex-sm-wrap -->
-            <div class="row bordo w-100 gap-4 m-0 p-0 d-flex h_testimonial justify-content-center align-items-center flex-wrap flex-sm-wrap">
-              <!-- This testimonials are supposed to be dynamics -->
-              
-              <!-- /.col-md-3 col-sm-11 p-0 single_testimonial flex_cent -->  
-              <div class="col-lg-3 col-sm-11 p-0 single_testimonial flex_cent">
-                <!-- /.card border-0 single_testimonial w-100 flex_around -->
-                <div class="card border-0 single_testimonial w-100 d-flex flex_around">
-                  <!-- /.testimonial_pic -->
-                  <img class="testimonial_pic" src="./assets/images/image-emily.jpg" alt="First Users">
-                  <!-- /.text-center testimonial_text -->
-                  <p class="text-center testimonial_text">
-                    We put our trust in sunnyside and they
-                    delivered, making sure our needs were met and
-                    deadlines were always hit.
-                  </p>
-                  <!-- /.text-center -->
-                  <div class="text-center">
-                    <!-- /.testimonial_person -->
-                    <h5 class="testimonial_person">Emily R</h5>
-                    <!-- /.testimonial_role -->
-                    <h6 class="testimonial_role">Marketing Director</h6>                    
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-md-3 col-sm-11 p-0 single_testimonial flex_cent -->
-              <div class="col-md-3 col-sm-11 p-0 single_testimonial flex_cent">
-                <!-- /.card border-0 single_testimonial w-100 flex_around -->
-                <div class="card border-0 single_testimonial w-100 flex_around">
-                  <!-- /.testimonial_pic -->
-                  <img class="testimonial_pic" src="./assets/images/image-thomas.jpg" alt="Second Users">
-                  <!-- /.text-center testimonial_text -->
-                  <p class="text-center testimonial_text">
-                    Sunnyside's enthusiasm coupled with their keen 
-                    interest in our brand's success made it a 
-                    satisfying and enjoyable experience.
-                  </p>
-                  <!-- /.text-center -->
-                  <div class="text-center">
-                    <!-- /.testimonial_person -->
-                    <h5 class="testimonial_person">Thomas S.</h5>
-                    <!-- /.testimonial_role -->
-                    <h6 class="testimonial_role">Chief Operating Officer</h6>                    
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-md-3 col-sm-11 single_testimonial flex_cent -->
-              <div class="col-md-3 col-sm-11 p-0 single_testimonial flex_cent">
-                <!-- /.card border-0 single_testimonial w-100 flex_around -->
-                <div class="card border-0 single_testimonial w-100 flex_around">
-                  <!-- /.testimonial_pic -->
-                  <img class="testimonial_pic" src="./assets/images/image-jennie.jpg" alt="Third Users">
-                  <!-- /.text-center testimonial_text -->
-                  <p class="text-center testimonial_text">
-                    Incredible end result! Our sales increased
-                    Over 400% when we worked with Sunnyside. 
-                    Highly recommended!
-                  </p>
-                  <!-- /.text-center -->
-                  <div class="text-center">
-                    <!-- /.testimonial_person -->
-                    <h5 class="testimonial_person">Jennie F.</h5>
-                    <!-- /.testimonial_role -->
-                    <h6 class="testimonial_role">Business Owner</h6>                    
-                  </div>
-                </div>
-              </div>
+            <div id="testimonialsCards" class="row w-100 gap-4 m-0 p-0 d-flex h_testimonial justify-content-center align-items-center flex-wrap flex-sm-wrap">
+              <!-- This testimonials were dynamically generated -->
             </div>
           </div>
         </div>
       </div>
     </section>
-    
   </main>
 
   <!-- /#site_footer -->
@@ -230,7 +160,6 @@
         </div>
       </div>
     </section>
-    
     <!-- /#icons -->
     <section id="icons">
       <!-- /.container-fluid p-0 h_icons -->
