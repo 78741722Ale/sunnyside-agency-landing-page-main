@@ -135,12 +135,18 @@
       <!-- /.container-fluid p-0 -->
       <div class="container-fluid p-0 ">
         <!-- /.w-100 row h-100 m-0 -->
-        <div class="w-100 row h-100 m-0 d-flex justify-content-center align-items-center flex-wrap">
+        <div class="w-100 row position-relative h-100 m-0 d-flex justify-content-center align-items-center flex-wrap">
+          <!-- /.col-12 position-absolute -->
+          <div class="col-12 mt-5 position-absolute flex_cent top-0">
+            <!-- /.testimonial_main_title -->
+            <h4 class="testimonial_main_title">Client Testimonials</h4>
+          </div>
           <!-- /.col-12 p-0 m-0 -->
           <div class="col-md-12 p-0 m-0">
             <!-- /.row w-100 gap-4 m-0 p-0 d-flex h_testimonial justify-content-center align-items-center flex-wrap flex-sm-wrap -->
-            <div class="row w-100 gap-4 m-0 p-0 d-flex h_testimonial justify-content-center align-items-center flex-wrap flex-sm-wrap">
+            <div class="row bordo w-100 gap-4 m-0 p-0 d-flex h_testimonial justify-content-center align-items-center flex-wrap flex-sm-wrap">
               <!-- This testimonials are supposed to be dynamics -->
+              
               <!-- /.col-md-3 col-sm-11 p-0 single_testimonial flex_cent -->  
               <div class="col-lg-3 col-sm-11 p-0 single_testimonial flex_cent">
                 <!-- /.card border-0 single_testimonial w-100 flex_around -->
@@ -213,22 +219,14 @@
   </main>
 
   <!-- /#site_footer -->
-  <footer class="mt-3" id="site_footer">
+  <footer id="site_footer">
     <!-- /#cards -->
     <section id="cards">
       <!-- /.container-fluid p-0 h_cards -->
       <div class="container-fluid p-0 h_cards">
         <!-- /.row w-100 h-100 m-0 -->
-        <div class="row d-flex justify-content-center align-items-center w-100 h-100 m-0 p-0 flex-wrap flex-sm-wrap">
-          <!-- This cards needs to be generate dynamically -->
-          <!-- /.col-md-3 col-sm-6 h-100 -->
-          <div id="firstFooterCard" class="col-md-3 col-sm-6 h-100 flex_cent"></div>
-          <!-- /.col-md-3 col-sm-6 h-100 -->
-          <div id="secondFooterCard" class="col-md-3 col-sm-6 h-100 flex_cent"></div>
-          <!-- /.col-md-3 col-sm-6 h-100 -->
-          <div id="thirdFooterCard" class="col-md-3 col-sm-6 h-100 flex_cent"></div>
-          <!-- /.col-md-3 col-sm-6 h-100 -->
-          <div id="fourthFooterCard" class="col-md-3 col-sm-6 h-100 flex_cent"></div>
+        <div id="footerCards" class="row d-flex justify-content-center align-items-center w-100 h-100 m-0 p-0 flex-wrap flex-sm-wrap">
+          <!-- These cards were dynamically generated -->
         </div>
       </div>
     </section>
@@ -247,39 +245,19 @@
             </a>
           </div>
           <!-- /.col-4 p-1 d-flex justify-content-around align-items-center mb-5 -->
-          <div class="col-lg-4 col-sm-10 p-1 d-flex justify-content-around align-items-center mb-5">
-            <!-- /.footer_links -->
-            <a class="footer_links" href="#">About</a>
-            <!-- /.footer_links -->
-            <a class="footer_links" href="#">Services</a>
-            <!-- /.footer_links -->
-            <a class="footer_links" href="#">Projects</a>
+          <div id="footerLinks" class="col-lg-4 col-sm-10 p-1 d-flex justify-content-around align-items-center mb-5">
+            <!-- These Links were dynamically generated -->
           </div>
           <!-- /.col-2 d-flex justify-content-evenly align-items-center mt-4 -->
-          <div class="col-sm-3 col-lg-2 d-flex justify-content-evenly align-items-center mt-5">
-            <!-- This icons need to be Dynamic -->
-            <!-- Facebook -->
-            <a class="flex_cent" href="#">
-              <i class="fa-brands fa-square-facebook footer_icons"></i>
-            </a>
-            <!-- Instagram -->
-            <a class="flex_cent" href="#">
-              <i class="fa-brands fa-instagram footer_icons"></i>
-            </a>
-            <!-- Twitter -->
-            <a class="flex_cent" href="#">
-              <i class="fa-brands fa-twitter footer_icons"></i>
-            </a>
-            <!-- Pinterest -->
-            <a class="flex_cent" href="#">
-              <i class="fa-brands fa-pinterest footer_icons"></i>   
-            </a>
+          <div id="footerIcons" class="col-sm-3 col-lg-2 d-flex justify-content-evenly align-items-center mt-5">
+            <!-- These Icons were dynamically generated -->
           </div>
         </div>
       </div>
     </section>
   </footer>
   
+  <!-- Link to JQuery -->
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   <!-- Link to my Bootstrap CDN JS file -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

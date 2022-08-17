@@ -22,15 +22,9 @@ async function getData(url) {
     }
     return response; // I need to return my response
 }
-
 //#endregion
 
-
 // #region brand DOM manipulation
-
-/**
- * This is a Function that i need for a try with my Async call
- */
 async function brandDom() {
     // I take the dom element I want to iterate over
     const brand = document.getElementById("transform")
@@ -81,10 +75,8 @@ async function standoutDom() {
         standout.insertAdjacentHTML('beforeend', standDiv)
     })
 }
-
 // Invoke my function for DOM manipulation
 standoutDom()
-
 //#endregion
 
 // #region Graphic Design & Photography DOM manipulation
@@ -109,9 +101,72 @@ async function graphicPhotography() {
         items.insertAdjacentHTML('beforeend', singleSection)
     })
 }
-
 // Invoke my function for DOM manipulation
 graphicPhotography()
+//#endregion
 
+//#region Footer Cards DOM manipulation
+async function cardsOfFooter() {
+    // I take the dom element I want to iterate over
+    const cards_footer = document.getElementById("footerCards")
 
+    // Invoke my function
+    let data = await getData('./assets/data/footer_cards.json')
+    // console.log(data);
+
+    data.forEach(element => {
+        let singleFooter =
+            `
+            <div id="${element.id}" class="${element.classes}"></div>
+            `
+        cards_footer.insertAdjacentHTML('beforeend', singleFooter)
+    })
+}
+// Invoke my function for DOM manipulation
+cardsOfFooter()
+//#endregion
+
+//#region Footer Links DOM manipulation
+async function footerLinks() {
+    // I take the dom element I want to iterate over
+    const footer_links = document.getElementById("footerLinks")
+
+    // Invoke my function
+    let data = await getData('./assets/data/footerLinks.json')
+    // console.log(data);
+
+    data.forEach(element => {
+        let singleLink =
+            `
+                <a class="${element.classes}" href="${element.ref}">${element.text}</a>
+            `
+        footer_links.insertAdjacentHTML('beforeend', singleLink)
+    })
+}
+
+// Invoke my function for DOM manipulation
+footerLinks()
+//#endregion
+
+//#region Footer Icons DOM manipulation
+async function footerIcons() {
+    // I take the dom element I want to iterate over
+    const footer_icons = document.getElementById("footerIcons")
+
+    // Invoke my function
+    let data = await getData('./assets/data/footerIcons.json')
+    // console.log(data);
+
+    data.forEach(element => {
+        let singleIcon =
+            `
+            <a class="${element.a_class}" href="${element.a_ref}">
+                <i class="${element.icon}"></i>
+            </a>
+            `
+        footer_icons.insertAdjacentHTML('beforeend', singleIcon)
+    })
+}
+// Invoke my function for DOM manipulation
+footerIcons()
 //#endregion

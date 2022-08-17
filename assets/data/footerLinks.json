@@ -1,0 +1,17 @@
+[
+    {
+        "classes" : "footer_links",
+        "ref" : "#",
+        "text" : "About"
+    },
+    {
+        "classes" : "footer_links",
+        "ref" : "#",
+        "text" : "Services"
+    },
+    {
+        "classes" : "footer_links",
+        "ref" : "#",
+        "text" : "Projects"
+    }
+]

@@ -16,6 +16,7 @@ body {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Utilities classes for see my container borders */
@@ -294,6 +295,17 @@ body {
 
 .single_testimonial {
     height: var(--single_testimonial_h);
+    background-color: inherit;
+}
+
+.testimonial_main_title {
+    font-weight: var(--fraunces_bold_weight);
+    letter-spacing: 10px;
+    font-size: 21.5px;
+    font-family: var(--fraunces);
+    text-transform: uppercase;
+    color: #BCBABB;
+    margin-top: 4.5rem;
 }
 
 .testimonial_pic {

@@ -1,0 +1,22 @@
+[
+    {
+        "a_class" : "flex_cent",
+        "a_ref" : "#",
+        "icon" : "fa-brands fa-square-facebook footer_icons"
+    },
+    {
+        "a_class" : "flex_cent",
+        "a_ref" : "#",
+        "icon" : "fa-brands fa-instagram footer_icons"
+    },
+    {
+        "a_class" : "flex_cent",
+        "a_ref" : "#",
+        "icon" : "fa-brands fa-twitter footer_icons"
+    },
+    {
+        "a_class" : "flex_cent",
+        "a_ref" : "#",
+        "icon" : "fa-brands fa-pinterest footer_icons"
+    }
+]
