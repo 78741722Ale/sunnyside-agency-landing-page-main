@@ -1,18 +1,20 @@
 [
     {
-        "col-id" : "cherry_pic",
-        "col-classes" : "col-md-6 d-flex justify-content-center align-items-end col-sm-12",
-        "title-classes" : "pb-4 h4_design_title text-center",
+        "col_id" : "cherry_pic",
+        "col_classes" : "col-md-6 p-0 d-flex justify-content-center align-items-end col-sm-12",
+        "info_wrap" : "col-lg-7 col-sm-12 mb-5 p-0",
+        "title_classes" : "pb-4 h4_design_title text-center",
         "title" : "Graphic Design",
-        "text-classes" : "text-center design_text",
+        "text_classes" : "text-center design_text",
         "text" : "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention."
     },
     {
-        "col-id" : "orange_pic",
-        "col-classes" : "col-md-6 d-flex justify-content-center align-items-end col-sm-12",
-        "title-classes" : "pb-4 h4_orange_title text-center",
+        "col_id" : "orange_pic",
+        "col_classes" : "col-md-6 d-flex justify-content-center align-items-end col-sm-12",
+        "info_wrap" : "col-lg-7 col-sm-12 mb-5 p-0",
+        "title_classes" : "pb-4 h4_orange_title text-center",
         "title" : "Photography",
-        "text-classes" : "text-center orange_text",
+        "text_classes" : "text-center orange_text",
         "text" : "Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
     }
 

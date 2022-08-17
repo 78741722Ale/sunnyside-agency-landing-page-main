@@ -1,6 +1,6 @@
 [
     {
-        "col_classes" : "col-md-6 col-sm-12 flex_cent",
+        "col_classes" : "col-lg-9 col-sm-12",
         "box_title_classes" : "h2_text mb-5 w-100",
         "box_title" : "Stand Out to the right audience",
         "box_text_classes" : "transform_stand_text mb-5",
