@@ -111,6 +111,11 @@ body {
     font-family: var(--fraunces);
     text-transform: uppercase;
     text-decoration: none;
+    color: black;
+}
+
+.learn:hover {
+    color: black;
 }
 
 .transform_stand_text,
@@ -189,13 +194,6 @@ body {
     text-decoration: none;
 }
 
-.contact_btn:active,
-.contact_btn:hover {
-    background-color: white;
-    color: black;
-    transition: all 0.4s ease;
-}
-
 /*#endregion */
 
 /*#region Site Header */
@@ -219,23 +217,35 @@ body {
 }
 
 .contact_btn {
-    background-color: #6FCDFF;
+    background-color: white;
     font-family: var(--fraunces);
     font-size: 16px;
     font-weight: var(--fraunces_semibold_weight);
     border-radius: 30px;
-    color: #DCF9FD;
+    color: black;
     border: none;
 }
 
+.contact_btn:active,
+.contact_btn:hover {
+    background-color: #6FCDFF;
+    color: #DCF9FD;
+    transition: all 0.4s ease;
+}
+
 .hero_title {
-    word-spacing: 20%;
-    letter-spacing: 5px;
+    word-spacing: 25%;
+    letter-spacing: 15px;
+    padding-top: 3rem;
     font-size: 58px;
     font-family: var(--fraunces);
     font-weight: var(--fraunces_bold_weight);
     color: white;
     text-transform: uppercase;
+}
+
+#hero_text {
+    margin-top: 4.5rem !important;
 }
 
 .header_arrow {
@@ -602,11 +612,6 @@ body {
     }
     /*#endregion  */
 
-
-    #hero_text {
-        margin-top: 50px;
-    }
-
     /* Col 11 */
     .h_header {
         width: var(--hero_cont_w);
@@ -644,6 +649,7 @@ body {
         color: white;
         text-transform: uppercase;
         height: fit-content;
+        padding-top: 0px !important;
     }
     /*#endregion  */
 

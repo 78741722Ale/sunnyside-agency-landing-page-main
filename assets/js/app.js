@@ -67,7 +67,7 @@ async function standoutDom() {
         let standDiv =
             `
         <div class="${element.col_classes}">
-            <h2 class="${element.box_title_classes}">${element.box_title}e</h2>
+            <h2 class="${element.box_title_classes}">${element.box_title}</h2>
             <p class="${element.box_text_classes}">${element.box_text}</p> 
             <a class="learn" href="#">Learn More</a>
         </div>
@@ -132,8 +132,7 @@ async function testimonialsCards() {
 // Invoke my function for DOM manipulation
 testimonialsCards()
 
-//#endegion
-
+//#endregion
 
 //#region Footer Cards DOM manipulation
 async function cardsOfFooter() {
