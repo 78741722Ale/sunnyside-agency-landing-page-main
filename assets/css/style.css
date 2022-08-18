@@ -403,7 +403,7 @@ body {
 
 /*#region Media Queries */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
     
     /*#region stylesheet rules  */
     *,
@@ -421,7 +421,7 @@ body {
     }
     
     body {
-        max-width: 350px;
+        max-width: 375px;
         width: 100%;
         margin: 0 auto;
     }
